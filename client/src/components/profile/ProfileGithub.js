@@ -6,8 +6,8 @@ class ProfileGithub extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clientId: 'd8a676b503a34ffa942b',
-      clientSecret: '46ec1fe98f6abe1416bbf7d811389e0fa8088e0f',
+      clientId: '63a0479ba9f7178e9efe',
+      clientSecret: 'f2746235e384c91420bf55783bf6f9184b250503',
       count: 5,
       sort: 'created: asc',
       repos: []
@@ -38,7 +38,7 @@ class ProfileGithub extends Component {
           <div className="col-md-6">
             <h4>
               <Link to={repo.html_url} className="text-info" target="_blank">
-                {repo.name} {repo.html_url}
+                {repo.name}
               </Link>
             </h4>
             <p>{repo.description}</p>
